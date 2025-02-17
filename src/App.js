@@ -23,7 +23,7 @@ const CounterApp = () => {
   //Creating a function that resets count to 0 when called.
 
   const buttonClasses = "flex p-2 rounded-lg transition-colors hover:bg-opacity-50 bg-[#EEE7DD]";
-  const monoFontClasses = "font-['IBM Plex Mono']"; 
+  const monoFontClasses = "font-mono"; 
 
   return (
     <div className="flex min-h-screen items-center flex-col gap-4 justify-center" style={{ backgroundColor: '#F9F5F2' }}>
@@ -40,7 +40,14 @@ const CounterApp = () => {
             <Minus size={24} color='#593E21'/>
           </button>
 
-          <span className={`${monoFontClasses} flex items-center justify-center text-sm text-center`} style={{ height: "40px", width: "40px" }}>
+          <span 
+            className={`
+              ${monoFontClasses} 
+              flex items-center justify-center 
+              text-sm text-center
+              w-[40px] h-[40px]
+            `}
+          >
             {count}
           </span>
 
