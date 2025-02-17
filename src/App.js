@@ -40,7 +40,7 @@ const CounterApp = () => {
             <Minus size={24} color='#593E21'/>
           </button>
 
-          <span className={monoFontClasses} style={{ height: "40px", width: "40px" }}>
+          <span className={`${monoFontClasses} flex items-center justify-center text-sm text-center`} style={{ height: "40px", width: "40px" }}>
             {count}
           </span>
 
